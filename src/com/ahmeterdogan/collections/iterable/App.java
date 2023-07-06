@@ -1,4 +1,4 @@
-package collections.iterable;
+package com.ahmeterdogan.collections.iterable;
 
 public class App {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package collections.comparator;
+package com.ahmeterdogan.collections.comparator;
 
 public class Soldier{
     private Rank rank;

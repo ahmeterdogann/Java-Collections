@@ -1,4 +1,4 @@
-package collections.iterable;
+package com.ahmeterdogan.collections.iterable;
 
 import java.util.Iterator;
 import java.util.Spliterator;

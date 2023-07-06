@@ -1,4 +1,4 @@
-package collections.comparator;
+package com.ahmeterdogan.collections.comparator;
 
 import java.util.ArrayList;
 import java.util.Collections;

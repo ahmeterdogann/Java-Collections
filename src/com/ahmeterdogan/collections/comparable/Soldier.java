@@ -1,4 +1,4 @@
-package collections.comparable;
+package com.ahmeterdogan.collections.comparable;
 
 public class Soldier implements  Comparable{
     private Rank rank;
