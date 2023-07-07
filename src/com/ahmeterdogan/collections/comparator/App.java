@@ -48,5 +48,19 @@ public class App {
         System.out.println();
         System.out.println("******************************");
         soldiers.stream().forEach(s -> System.out.print(s.getFullName() + "-"));
+        System.out.println();
+
+        //Comparator lambda ex
+        Comparator<Soldier> comparator = (s1, s2) -> s1.getRank().ordinal() - s2.getRank().ordinal(); //Önce rütbeye göre sırala
+        comparator = comparator.thenComparing((s1, s2) -> s1.getFullName().compareTo(s2.getFullName())); //ardından rütbeye göre aynı olanları isme göre sırala
+
+        soldiers.add(new Soldier(Rank.SUBAY, "Hakkı"));
+        soldiers.add(new Soldier(Rank.UZMAN_CAVUS, "Alparslan"));
+
+        System.out.println("******************************");
+        Collections.sort(soldiers, comparator);
+        soldiers.stream().forEach(s -> System.out.print(s.getFullName() + "-"));
+
+
     }
 }
