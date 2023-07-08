@@ -45,6 +45,7 @@ public class HashSetExamples {
         System.out.println("***************************************************");
 
         Set setOf = Set.of(1, 2, 3 ,4);
+        //Set setOf = Set.of(1, null, 3 ,4); //NullPointerEx verir of metotları oluşturulan set'e null eklenemez
         listSet(setOf);
         //setOf.add(1); Set'i of metotları ile oluşturduğumuz için unmodifiable oldu ve add işleminde exception verdi.
 
